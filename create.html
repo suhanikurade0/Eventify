@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create Event – Eventify</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container nav">
+      <h1 class="brand">Eventify</h1>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a class="active" href="create.html">Create Event</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Create Event (Frontend Demo)</h2>
+    <form id="create-event-form" class="form">
+      <label>Title <input type="text" name="title" required /></label>
+      <label>Date <input type="date" name="date" required /></label>
+      <label>Category
+        <select name="category" required>
+          <option>Tech</option>
+          <option>Cultural</option>
+          <option>Sports</option>
+        </select>
+      </label>
+      <label>Location <input type="text" name="location" required /></label>
+      <label>Image (choose one)
+        <select name="image">
+          <option value="assets/images/tech.svg">Tech</option>
+          <option value="assets/images/cultural.svg">Cultural</option>
+          <option value="assets/images/sports.svg">Sports</option>
+        </select>
+      </label>
+      <label>Description
+        <textarea name="description" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn">Add to Preview</button>
+      <button id="export-json" class="btn btn-outline" type="button">Export JSON</button>
+    </form>
+
+    <h3>Preview</h3>
+    <div id="preview" class="grid"></div>
+    <p class="note">Note: This is a UI-only demo. Use "Export JSON" to save your event data and add it to <code>assets/events.json</code>.</p>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Eventify</div>
+  </footer>
+</body>
+</html>

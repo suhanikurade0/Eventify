@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register – Eventify</title>
+  <link rel="stylesheet" href="assets/style.css"/>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="container nav">
+      <h1 class="brand">Eventify</h1>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="create.html">Create Event</a></li>
+        <li><a class="active" href="register.html">Register</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Register for an Event</h2>
+    <form id="register-form" class="form">
+      <label>Full Name <input type="text" name="name" required /></label>
+      <label>Email <input type="email" name="email" required /></label>
+      <label>Event
+        <select name="event" id="event-select" required></select>
+      </label>
+      <button class="btn" type="submit">Get Pass</button>
+    </form>
+
+    <div id="ticket" class="ticket hidden">
+      <h3>🎟️ Registration Confirmed</h3>
+      <p id="ticket-name"></p>
+      <p id="ticket-event"></p>
+      <p id="ticket-code"></p>
+      <button id="download-pass" class="btn btn-outline" type="button">Download Pass</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">© 2025 Eventify</div>
+  </footer>
+</body>
+</html>
