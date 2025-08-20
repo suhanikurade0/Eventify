@@ -1,0 +1,47 @@
+/* Base */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: #222; background: #fafafa; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+
+/* Nav */
+header { background: #0d47a1; color: #fff; }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+.brand { margin: 0; font-size: 22px; letter-spacing: .5px; }
+.menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 14px; }
+.menu a { color: #fff; text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+.menu a.active, .menu a:hover { background: rgba(255,255,255,.15); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 24px; padding: 28px 0 12px; align-items: center; }
+.hero-img { width: 100%; border-radius: 10px; box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+.hero-text h2 { margin: 0 0 6px; }
+.hero-text p { line-height: 1.5; }
+
+/* Cards / grid */
+.features { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); padding: 16px 0 28px; }
+.card { background: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,.06); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin: 16px 0 28px; }
+.tile { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 3px 14px rgba(0,0,0,.06); display: flex; flex-direction: column; }
+.tile img { width: 100%; height: 160px; object-fit: cover; }
+.tile .tile-body { padding: 12px; display: grid; gap: 6px; }
+.badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 12px; background: #e3f2fd; color: #0d47a1; }
+
+/* Forms */
+.form { background: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,.06); display: grid; gap: 12px; max-width: 520px; }
+.form label { display: grid; gap: 6px; font-size: 14px; }
+.form input, .form select, .form textarea { padding: 10px 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+.note { color: #555; font-size: 14px; }
+
+/* Buttons */
+.btn { display: inline-block; border: none; padding: 10px 14px; border-radius: 8px; background: #0d47a1; color: #fff; text-decoration: none; cursor: pointer; }
+.btn:hover { filter: brightness(1.05); }
+.btn-outline { background: transparent; color: #0d47a1; border: 1px solid #0d47a1; }
+
+/* Ticket */
+.ticket { margin-top: 18px; padding: 16px; background: #fff; border-radius: 10px; box-shadow: 0 3px 14px rgba(0,0,0,.06); }
+.hidden { display: none; }
+
+/* Footer */
+footer { background: #0d47a1; color: #fff; padding: 16px 0; margin-top: 24px; }
+footer .container { text-align: center; font-size: 14px; }

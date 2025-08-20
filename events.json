@@ -1,0 +1,26 @@
+[
+  {
+    "title": "HackSprint 2025",
+    "date": "2025-09-10",
+    "category": "Tech",
+    "location": "CSE Auditorium",
+    "description": "24-hour coding hackathon for innovative student solutions.",
+    "image": "assets/images/tech.svg"
+  },
+  {
+    "title": "Cultural Night Fiesta",
+    "date": "2025-09-18",
+    "category": "Cultural",
+    "location": "Open Air Theatre",
+    "description": "Music, dance, drama\u2014celebrating diversity and talent.",
+    "image": "assets/images/cultural.svg"
+  },
+  {
+    "title": "Interdepartment Sports Meet",
+    "date": "2025-10-05",
+    "category": "Sports",
+    "location": "Main Stadium",
+    "description": "Cricket, football, athletics and more. Cheer for your dept!",
+    "image": "assets/images/sports.svg"
+  }
+]
